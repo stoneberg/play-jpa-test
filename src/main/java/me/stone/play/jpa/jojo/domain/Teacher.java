@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.Table;
 
 import lombok.AccessLevel;
@@ -18,7 +19,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Entity
-@Table(name = "jojo_teacher")
+@Table(name = "jojo_teacher", indexes = { @Index(name = "IDX_TEACHER_NAME", unique = true, columnList = "name") })
 public class Teacher {
 
     @Id

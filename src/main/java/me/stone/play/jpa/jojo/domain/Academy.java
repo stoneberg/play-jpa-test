@@ -9,6 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -24,7 +25,7 @@ import lombok.ToString;
 @ToString(exclude = { "subjects" })
 @Getter
 @Entity
-@Table(name = "jojo_academy")
+@Table(name = "jojo_academy", indexes = { @Index(name = "IDX_ACADEMY_NAME", unique = true, columnList = "name") })
 public class Academy {
 
     @Id
