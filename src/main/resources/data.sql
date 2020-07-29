@@ -44,3 +44,9 @@ INSERT INTO jojo_subject(name, academy_id, teacher_id) VALUES ('JavaWebDev-19', 
 INSERT INTO jojo_subject(name, academy_id, teacher_id) VALUES ('JavaWebDev-10', 10, 10);
 INSERT INTO jojo_subject(name, academy_id, teacher_id) VALUES ('JavaWebDev-20', 10, 10);
 
+-- -------------------------------------------------------------------------------------------
+
+
+
+
+

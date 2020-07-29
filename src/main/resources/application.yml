@@ -21,7 +21,10 @@ logging:
 spring:
   profiles:
     active: local
-        
+    
+  banner:
+    location: classpath:banner/banner.txt
+    
 # Actuator
 #management:
 #  endpoints:
