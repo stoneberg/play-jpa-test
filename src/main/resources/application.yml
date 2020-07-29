@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8080
 
 #server:
 #  error:
@@ -14,9 +14,11 @@ server:
 
 logging:
   config: classpath:logback/logback-spring.xml
-        
+  
+#  level:
+#    org.hibernate.type.descriptor.sql: trace
+
 spring:
-  # Default Profile
   profiles:
     active: local
         
