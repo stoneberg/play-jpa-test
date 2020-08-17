@@ -1,43 +1,18 @@
 server:
   port: 8080
 
-#server:
-#  error:
-#    include-stacktrace: never
-
-#server:
-#  servlet:
-#    encoding:
-#      charset: UTF-8
-#      enabled: true
-#      force: true
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
 
 logging:
   config: classpath:logback/logback-spring.xml
-  
-#  level:
-#    org.hibernate.type.descriptor.sql: trace
 
 spring:
   profiles:
     active: local
-    
+
   banner:
     location: classpath:banner/banner.txt
-    
-# Actuator
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-#
-#  endpoint:
-#    health:
-#      show-components: always
-#      show-details: always
-#
-#  metrics:
-#    export:
-#      jmx:
-#        enabled: true

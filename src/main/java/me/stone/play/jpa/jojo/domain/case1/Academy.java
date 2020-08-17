@@ -1,4 +1,4 @@
-package me.stone.play.jpa.jojo.domain;
+package me.stone.play.jpa.jojo.domain.case1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@EqualsAndHashCode(exclude = { "subjects" })
+@EqualsAndHashCode
 @ToString(exclude = { "subjects" })
 @Getter
 @Entity
