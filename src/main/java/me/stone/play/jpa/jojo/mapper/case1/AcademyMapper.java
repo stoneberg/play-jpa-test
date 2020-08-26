@@ -18,7 +18,7 @@ public interface AcademyMapper {
     AcademyDto toAcademyDto(Academy academy);
     List<AcademyDto> toAcademyDtoList(List<Academy> academies);
 
-    TeacherDto toTeacherDto(Teacher tacher);
+    TeacherDto toTeacherDto(Teacher teacher);
     List<TeacherDto> toTeacherDtoList(List<Teacher> teachers);
 
     SubjectDto toSubjectDto(Subject subject);

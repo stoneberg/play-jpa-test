@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * parent 또는 child에서 순환 참조가 발생하지 않도록
+ * parent 또는 child 에서 순환 참조가 발생하지 않도록
  * 연관관계를 끊어야 한다.
  */
 public class AcademyRes {
@@ -23,7 +23,16 @@ public class AcademyRes {
         public static class SubjectDto {
             private Long id;
             private String name;
+            private TeacherDto teacher;
+
+            @NoArgsConstructor
+            @Data
+            public static class TeacherDto {
+                private Long id;
+                private String name;
+            }
         }
+
     }
 
     @NoArgsConstructor

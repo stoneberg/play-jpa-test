@@ -34,8 +34,8 @@ spring:
     properties:
       hibernate:
         jdbc.lob.non_contextual_creation: true
-        default_batch_fetch_size: 500
-        query:
-          in_clause_parameter_padding: true
+#        default_batch_fetch_size: 500
+#        query:
+#          in_clause_parameter_padding: true
         naming:
           physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
